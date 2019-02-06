@@ -7,6 +7,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-M7MVLRP');</script>
+	<script>
+		function(){
+		  var x = Math.floor((Math.random() * 10) + 1);
+			
+		  if(x%2 == 0){dataLayer.push({'userType':'newUser'})}else{dataLayer.push({'userType':'oldUser'})}
+		}
+	</script>
 <!-- End Google Tag Manager -->
 	<title>Home</title>
 	<meta charset="UTF-8">
