@@ -6,7 +6,7 @@
 	<!-- Google Tag Manager -->
 <script>
 	var x = Math.floor((Math.random() * 10) + 1);
-			
+			dataLayer.push({'event': 'event_name'});
 		  if(x%2 == 0){dataLayer.push({'event':'message','userType':'newUser'});}else{dataLayer.push({'event':'message','userType':'oldUser'});}
 	
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
