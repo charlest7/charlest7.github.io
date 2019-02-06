@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		
+	<script>
+		var x = Math.floor((Math.random() * 10) + 1);
+			dataLayer.push({'event': 'tets'});
+		  if(x%2 == 0){dataLayer.push({'event':'message','userType':'newUser'});}else{dataLayer.push({'event':'message','userType':'oldUser'});}
+	</script>
 		  
 	<!-- Google Tag Manager -->
 <script>
-	var x = Math.floor((Math.random() * 10) + 1);
-			dataLayer.push({'event': 'tets'});
-		  if(x%2 == 0){dataLayer.push({'event':'message','userType':'newUser'});}else{dataLayer.push({'event':'message','userType':'oldUser'});}
+	
 	
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
