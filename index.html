@@ -5,7 +5,7 @@
 		function(){
 		  var x = Math.floor((Math.random() * 10) + 1);
 			
-		  if(x%2 == 0){dataLayer.push({'userType':'newUser'});}else{dataLayer.push({'userType':'oldUser'});}
+		  if(x%2 == 0){dataLayer.push({'event':'message','userType':'newUser'});}else{dataLayer.push({'event':'message','userType':'oldUser'});}
 		}
 	</script>
 	<!-- Google Tag Manager -->
