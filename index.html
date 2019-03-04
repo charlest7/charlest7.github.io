@@ -4,7 +4,8 @@
 // Send transaction data with a pageview if available
 // when the page loads. Otherwise, use an event when the transaction
 // data becomes available.
-var randomId = Math.floor((Math.random() * 10000) + 1);
+function pushDatalayer(){
+ var randomId = Math.floor((Math.random() * 10000) + 1);
 var randomPrice = Math.floor((Math.random() * 1000000) + 1);
 dataLayer.push({
   'event':'purchase',
@@ -40,6 +41,8 @@ dataLayer.push({
     }
   }
 });
+}
+
 </script>
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -141,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<li class="active-menu">
 								<a href="index.html">Home</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
+									<li><a href="index.html" onclick="pushDatalayer()">Homepage 1</a></li>
 									<li><a href="home-02.html">Homepage 2</a></li>
 									<li><a href="home-03.html">Homepage 3</a></li>
 								</ul>
