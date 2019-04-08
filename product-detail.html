@@ -43,6 +43,24 @@
 	  image_url: 'https://www.example.com/product/cart.jpg'
 	});
  }
+	
+ function productDetail(){
+	 analytics.track('Product List Viewed', {
+	  list_id: 'hot_deals_1',
+	  category: 'Baju',
+	  products: [
+	    {
+	         product_id: '12345',
+		  sku: 'G-32',
+		  name: 'Baju baru',
+		  price: 200000,
+		  position: 1,
+		  url: 'https://www.example.com/product/cart',
+		  image_url: 'https://www.example.com/product/cart.jpg'
+	    }
+	  ]
+	});
+ }
 </script>
 
 	<title>Product Detail</title>
@@ -79,6 +97,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+	<script>productDetail()</script>
 <body class="animsition">
 
 	<!-- Header -->
