@@ -9,6 +9,7 @@
 </script>
 <script>
  function addToCart(){
+	 console.log('add');
 	 analytics.track('Product Added', {
 	  cart_id: '123456',
 	  product_id: '12345',
@@ -27,6 +28,7 @@
  }
 
  function removeFromCart{
+	 console.log('remove');
 	 analytics.track('Product Removed', {
 	  cart_id: '123456',
 	  product_id: '12345',
@@ -45,6 +47,7 @@
  }
 	
  function productDetail(){
+	 console.log('product detail');
 	 analytics.track('Product List Viewed', {
 	  list_id: 'hot_deals_1',
 	  category: 'Baju',
@@ -61,6 +64,8 @@
 	  ]
 	});
  }
+	
+productDetail();
 </script>
 
 	<title>Product Detail</title>
@@ -97,7 +102,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-	<script>productDetail()</script>
+	
 <body class="animsition">
 
 	<!-- Header -->
