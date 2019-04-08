@@ -53,6 +53,24 @@
 		  image_url: 'https://www.example.com/product/path.jpg'
 		});
 	}
+	
+	function promotionViewed(){
+		analytics.track('Promotion Viewed', {
+		  promotion_id: 'promo_1',
+		  creative: 'top_banner_2',
+		  name: 'test ilmuone',
+		  position: 1
+		});
+	}
+	
+	function promotionClick(){
+		analytics.track('Promotion Clicked', {
+		  promotion_id: 'promo_1',
+		  creative: 'top_banner_2',
+		  name: '75% store-wide shoe sale',
+		  position: 'home_banner_top'
+		});
+	}
 
 	</script>
 
@@ -405,7 +423,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04" onclick="promotionClick()" onfocus="promotionViewed()">
 									Shop Now
 								</a>
 							</div>
