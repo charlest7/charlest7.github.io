@@ -46,6 +46,13 @@
 			});
 		}
 		
+		function testedeve(){
+		analytics.track('Logged In', {
+  category: 'Account',
+  label: 'Premium',
+  value: 50
+});
+		}
 		function purchase(){
 			console.log('purchase')
 			analytics.track('Order Completed', {
@@ -89,6 +96,7 @@
 	<script>
 		checkoutOne();
 		checkoutSecond();
+		testedeve();
 		purchase();
 	</script>
 	<title>Shoping Cart</title>
