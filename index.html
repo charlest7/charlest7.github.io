@@ -17,6 +17,7 @@
 	}
 	
 	function productClick(){
+		console.log('Product Click');
 		 analytics.track('Product Clicked', {
 			  product_id: '12345',
 			  sku: 'G-32',
@@ -34,6 +35,7 @@
 	}
 	
 	function productView(){
+		console.log('Product View')
 		analytics.track('Product Viewed', {
 		  product_id: '507f1f77bcf86cd799439011',
 		  sku: 'G-32',
