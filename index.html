@@ -27,6 +27,14 @@
 	analytics.identify({
 	  clientId: clientId,
 	  sessionId: sessionId,
+	  context: {
+    		'Google Analytics' => {
+        		clientId: '1033501218.1368477899'
+    			},
+		campaign.name: "Test Name Campaign",
+		campaign.source: "TesT Source Campaign",
+		campaign.medium: "Test Medium Campaign"
+  		   }
 	});
 	
 	analytics.page({
