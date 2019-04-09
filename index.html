@@ -87,6 +87,7 @@
 	}
 	
 	function promotionViewed(){
+		console.log('promotion viewed');
 		analytics.track('Promotion Viewed', {
 		  promotion_id: 'promo_1',
 		  creative: 'top_banner_2',
@@ -96,6 +97,7 @@
 	}
 	
 	function promotionClick(){
+		console.log("promotion click")
 		analytics.track('Promotion Clicked', {
 		  promotion_id: 'promo_1',
 		  creative: 'top_banner_2',
