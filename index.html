@@ -8,11 +8,40 @@
   }}();
 </script>
 <script>
+	var sessionId = new Date().getTime() + '.' + Math.random().toString(36).substring(5);
+	
+	function getClientId() {
+	  try {
+	    var trackers = ga.getAll();
+	    var i, len;
+	    for (i = 0, len = trackers.length; i < len; i += 1) {
+	      if (trackers[i].get('trackingId') === {{GA Tracking Code}}) {
+		return trackers[i].get('clientId');
+	      }
+	    }
+	  } catch(e) {}  
+	  return 'false';
+	}
+	
+	var clientId = getClientId();
+	analytics.identify({
+	  clientId: clientId,
+	  sessionId: sessionId,
+	});
+	
+	analytics.page({
+	  title: 'Signup Modal',
+	  url: 'https://segment.com/#signup',
+	  path: '/#signup',
+	  referrer: 'https://segment.com/'
+	});
 	function addEvent(){
 		analytics.track('Article Bookmarked', {
 		  title: 'Snow Fall',
 		  subtitle: 'The Avalanche at Tunnel Creek',
-		  author: 'John Branch'
+		  author: 'John Branch',
+		 
+			
 		});
 	}
 	
