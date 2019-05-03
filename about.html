@@ -19,6 +19,31 @@
        }
     }
     </script>
+     <amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-131920835-1",
+        "config" : {
+          "UA-131920835-1": { "groups": "default" }
+        }
+       },"extraUrlParams":{
+                "cd5":"Event AMP"
+       }
+      },
+      "triggers": {
+        "button": {
+          "selector": "#login",
+          "on": "click",
+          "vars": &#123;
+            "event_name": "login",
+            "method": "Google"
+          }
+        }
+      }
+    }
+  </script>
+</amp-analytics> 
     </amp-analytics>
     <script type="application/ld+json">
       {
