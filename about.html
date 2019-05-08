@@ -10,16 +10,23 @@
     <script type="application/json">
 
     
-    {
-      "vars" : {
+     {
+      "vars": {
         "gtag_id": "UA-131920835-1",
-        "config" : {
-          "UA-131920835-1": { "groups": "default" }
+        "config": {
+         "UA-131920835-1": { "groups": "default" }
         }
-       },"extraUrlParams":{
-                "cd5":"Event AMP"
-       }
-
+      },
+      "triggers": {
+        "button": {
+          "selector": "#the-button",
+          "on": "click",
+          "vars": {
+            "event_name": "login",
+            "method": "Google"
+          }
+        }
+      }
     }
     </script>
  
