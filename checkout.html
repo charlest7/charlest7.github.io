@@ -3,6 +3,7 @@
 <head>
 	<script>
 		function onCheckout() {
+			console.log('checkout');
   dataLayer.push({
     'event': 'checkout',
     'ecommerce': {
@@ -31,7 +32,7 @@
 }
 
 	function purchaseDataLayer(){
-	     
+	     console.log('purchase');
 	 dataLayer.push({
 		  'ecommerce': {
 		    'purchase': {
