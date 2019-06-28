@@ -8,7 +8,6 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-
     
      {
       "vars": {
@@ -28,15 +27,14 @@
             "il1pi1pr":"15.25",
             "il1pi1ps":"1",
             "il1pi1va":"Gray"
-
-      },"triggers": {
-          "button": {
-            "selector": "#the-button",
-            "on": "click",
-            "vars": {
-              "event_name": "login",
-              "method": "Google"
-            }
+      },
+      "triggers": {
+        "button": {
+          "selector": "#the-button",
+          "on": "click",
+          "vars": {
+            "event_name": "login",
+            "method": "Google"
           }
         }
       }
@@ -61,6 +59,5 @@
   <body>
     <h1>Welcome to the mobile web</h1>
     <button id="the-button">Button Login</button>
-     <button id="prod-impression">Button Login</button>
   </body>
 </html>
