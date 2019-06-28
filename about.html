@@ -27,17 +27,24 @@
             "il1pi1pr":"15.25",
             "il1pi1ps":"1",
             "il1pi1va":"Gray"
-      },
-      "triggers": {
-        "button": {
-          "selector": "#the-button",
-          "on": "click",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
+      },"triggers": {
+          "button": {
+            "selector": "#the-button",
+            "on": "click",
+            "vars": {
+              "event_name": "login",
+              "method": "Google"
+            }
           }
-        }
-      }
+      },"triggers": {
+          "button": {
+            "selector": "#product-click",
+            "on": "click",
+            "vars": {
+              "event_name": "login",
+              "method": "Google"
+          }
+       }
     }
     </script>
  
@@ -59,5 +66,6 @@
   <body>
     <h1>Welcome to the mobile web</h1>
     <button id="the-button">Button Login</button>
+    <button id="product-click">Button Login</button>
   </body>
 </html>
