@@ -53,7 +53,30 @@ dataLayer.push({
   }
 });
 }
+	
+	function productClick() {
+  dataLayer.push({
+    'event': 'productClick',
+    'ecommerce': {
+      'click': {
+        'actionField': {'list': 'Search Results'},      // Optional list property.
+        'products': [{
+          'name': 'Donut Friday Scented T-Shirt',
+       'id': '67890',
+       'price': '33.75',
+       'brand': 'Google',
+       'category': 'Apparel',
+       'variant': 'Black',
+	'dimension7':'test',
+       'list': 'Search Results',
+       'position': 2
+         }]
+       }
+     }
+  });
+}
 	promotionViews();
+	productClick();
 	promotionViewed();
 	productView();
 	</script>
