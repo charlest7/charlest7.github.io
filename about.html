@@ -11,23 +11,56 @@
     
   
     
-    {
+     {
         "vars": {
-          "gtag_id": "UA-131920835-1",
-          "event_category": "amp all category page",
+          "gtag_id": "UA-9801603-6",
+          "event_category": "amp product detail page",
           "config": {
-            "UA-131920835-1": {
+            "UA-9801603-6": {
               "groups": "default"
             }
           }
         },
         "extraUrlParams": {
-          "cd6": "AMP",
-          "cd8": "AMP",
-          "cd9": "tokopediamarketplace",
-          "cd10": "${ampdocHostname}"
+          "cd75": "AMP",
+          "cd69": "AMP",
+          "cd81": "tokopediamarketplace",
+          "cd76": "${ampdocHostname}"
+        },
+        "triggers": {
+          "scrollPings" : {
+            "on": "scroll",
+            "scrollSpec" : {
+              "verticalBoundaries" : [50]
+            },
+            "request" : "event",
+            "vars" : {
+              "event_name" : "scroll page",
+              "method" : "sepatu futsal adidas conquisto ii in black bb0552 original bnib"
+            }
+          },
+          "clickBuyButton" : {
+            "on" : "click",
+            "selector" : "#buyButton",
+            "request" : "event",
+            "vars" : {
+              "event_name" : "click -  buy",
+              "method" : "sepatu futsal adidas conquisto ii in black bb0552 original bnib"
+            }
+          },
+          "clickaATCButton" : {
+            "on" : "click",
+            "selector" : "#ATCButton",
+            "request" : "event",
+            "vars" : {
+              "event_name" : "click - add to cart",
+              "method" : "sepatu futsal adidas conquisto ii in black bb0552 original bnib"
+            }
+          }
         }
       }
+      
+
     </script>
  
     </amp-analytics>
