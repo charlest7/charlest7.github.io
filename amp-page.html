@@ -25,6 +25,29 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+     <!-- Configure analytics to use gtag -->
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "UA-131920835-1",
+            "config": {
+              "UA-131920835-1": { "groups": "default" }
+            }
+          },
+          "triggers": {
+            "button": {
+              "selector": "#the-button",
+              "on": "click",
+              "vars": {
+                "event_name": "login",
+                "method": "Google"
+              }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
     <h1>Sample document</h1>
     <p>
       Some text
