@@ -5,38 +5,80 @@
     <title>Hello, AMPs</title>
     <link rel="canonical" href="http://localhost/documentation/guides-and-tutorials/start/create/basic_markup">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
-
-    
-
-
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  </head>
-  <body>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
-  <script type="application/json">
-    {
+    <script type="application/json">
+    
+     {
       "vars": {
         "gtag_id": "UA-131920835-1",
+        "event_category":"Click Button",
         "config": {
          "UA-131920835-1": { "groups": "default" }
         }
-      },
-      "triggers": {
-        "button": {
-          "selector": "#the-button",
-          "on": "click",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
+      },"extraUrlParams":{
+        "cd5":"Event AMP",
+        "il1nm":"Search Results",
+            "il1pi1br":"Google",
+            "il1pi1ca":"Apparel",
+            "il1pi1cd7":"test",
+            "il1pi1id":"12345",
+            "il1pi1nm":"Triblend Android T-Shirt",
+            "il1pi1pr":"15.25",
+            "il1pi1ps":"1",
+            "il1pi1va":"Gray"
+      },"triggers": {
+          "button": {
+            "selector": "#the-button",
+            "on": "click",
+            "vars": {
+              "event_name": "login",
+              "method": "Google"
+            }
           }
-        }
+      },"triggers": {
+          "button": {
+            "selector": "#product-click",
+            "on": "click",
+            "vars": {
+             "event_category":"Enhance Ecommerce",
+              "event_name": "Product Click",
+              "method": "Google"
+            },"extraUrlParams":{
+                "pa":"click",
+                "pal":"Search Results",
+                "pr1br":"Google",
+                "pr1ca":"Apparel",
+                "pr1cd7":"test",
+                "pr1id":"67890",
+                "pr1nm":"Donut Friday Scented T-Shirt",
+                "pr1pr":"33.75",
+                "pr1ps":"2",
+                "pr1va":"Black"
+          }
+        } 
       }
     }
-  </script>
-</amp-analytics>
+    </script>
+ 
+    </amp-analytics>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+      console.log("tes");
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  <body>
     <h1>Welcome to the mobile web</h1>
     <button id="the-button">Button Login</button>
-    <button id="ATCButton">Button Login</button>
+    <button id="product-click">Button Login</button>
   </body>
 </html>
