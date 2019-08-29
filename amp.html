@@ -8,34 +8,92 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <amp-analytics type="gtag" data-credentials="include">
   <script type="application/json">
-    {
-      "vars": {
-        "gtag_id": "UA-131920835-1",
-        "config": {
-         "UA-131920835-1": { "groups": "default" }
-        }
-      },
-      "triggers": {
-        "button": {
-          "selector": "#the-button",
-          "on": "click",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
-          },"extraUrlParams": {
-            "il1nm":"Search Results",
-            "il1pi1br":"Google",
-            "il1pi1ca":"Apparel",
-            "il1pi1cd7":"test",
-            "il1pi1id":"12345",
-            "il1pi1nm":"Triblend Android T-Shirt",
-            "il1pi1pr":"15.25",
-            "il1pi1ps":"1",
-            "il1pi1va":"Gray"
+    <script type="application/json">
+          {
+            "vars": {
+              "gtag_id": "UA-9801603-6",
+              "event_category": "amp find Page",
+              "config": {
+                "UA-9801603-6": {
+                  "groups": "default"
+                }
+              }
+            },
+            "extraUrlParams": {
+              "cd75": "AMP",
+              "cd69": "AMP",
+              "cd81": "tokopediamarketplace",
+              "cd76": "${ampdocHostname}"
+            },
+            "triggers": {
+              "scrollPings" : {
+                "on": "scroll",
+                "scrollSpec" : {
+                  "verticalBoundaries" : [50]
+                },
+                "request" : "event",
+                "vars" : {
+                  "event_name" : "scroll page",
+                  "method" : "segway"
+                }
+              },
+              "breadcrumbClick" : {
+                "on" : "click",
+                "selector" : "#breadcrumb-link",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click breadcrumb",
+                  "method" : "https://m.tokopedia.com"
+                }
+              },
+              "productClick" : {
+                "on" : "click",
+                "selector" : ".trackProduct",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click product list",
+                  "method" : "${productId}"
+                }
+              },
+              "loadMoreClick" : {
+                "on" : "click",
+                "selector" : "#load-more",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view all",
+                  "method" : "https://m.tokopedia.com/search?q=segway&amp;st=product"
+                }
+              },
+              "bottomFilterClick" : {
+                "on" : "click",
+                "selector" : "#bottom-filter",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click filter",
+                  "method" : "segway"
+                }
+              },
+              "bottomSortClick" : {
+                "on" : "click",
+                "selector" : "#bottom-sort",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click sort",
+                  "method" : "segway"
+                }
+              },
+              "bottomDisplayClick" : {
+                "on" : "click",
+                "selector" : "#bottom-display",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view type",
+                  "method" : "segway"
+                }
+              }
+            }
           }
-        }
-      }
-    }
+        </script>
   </script>
 </amp-analytics>
     <script type="application/ld+json">
