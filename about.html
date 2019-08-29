@@ -8,32 +8,42 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <amp-analytics type="gtag" data-credentials="include" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout" i-amphtml-layout="fixed" style="width: 1px; height: 1px;" aria-hidden="true" hidden="">
         <script type="application/json">
-        {
-          "vars": {
-              "gtag_id": "UA-9801603-6",
-              "config": {
-               "UA-9801603-6": { "groups": "default" }
-              }
-            },"extraUrlParams": {
-               "cd6": "2019-07-21T08:14:03.809281+00:00",
-               "cd7": "2019-07-21T08:14:03.809281+00:00",
-               "cd8": "Orami",
-               "cd9": "Intan",
-               "cd10": "Parenting",
-               "cd11":"xxxxxxxxxx"
+       {
+  "vars" : {
+    "gtag_id": "UA-63387562-1",
+    "linker": {
+      "domains": ["https://charlest7.github.io/", "https://charlest7.github.io/about.html"]
+    },
+    "config" : {
+      "UA-63387562-1": { "groups": "default" }
+    }
+  },"extraUrlParams": {
+       "cd6": "2019-07-21T08:14:03.809281+00:00",
+       "cd7": "2019-07-21T08:14:03.809281+00:00",
+       "cd8": "Orami",
+       "cd9": "Intan",
+       "cd10": "Parenting",
+       "cd11":"xxxxxxxxxx"
        
-             },"triggers": {
-        "button": {
-          "selector": "#the-button",
-          "on": "click",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
-          }
-        }
-      }
-     }
-    
+  },"triggers": {
+                      "trackPageviewWithAmpdocUrl": {
+                        "on": "visible",
+                        "request": "pageview",
+                        "vars": {
+                          "title": "Kakek Nenek Tidak Dekat dengan Cucu, Apa Sebabnya?" ,
+                          "content_category": "Parenting",
+                          "content_subcategory": "Keluarga",
+                          "content_location": "Jakarta",
+                          "content_author": "Orami",
+                          "content_editor": "Intan",
+                          "content_lipsus":"",
+                          "content_type":"Standard",
+                          "content_PublishedDate": "2019-07-21T08:14:03.809281+00:00",
+                          "content_ModifiedDate": "2019-07-21T08:14:03.809281+00:00"
+                        }
+                      }
+                  }
+}
     
 
         </script>
