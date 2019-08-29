@@ -23,14 +23,92 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <amp-analytics type="gtag" data-credentials="include">
 <script type="application/json">
-{
-  "vars" : {
-    "gtag_id": "UA-9801603-6",
-    "config" : {
-      "UA-9801603-6": { "groups": "default" }
-    }
-  }
-}
+
+          {
+            "vars": {
+              "gtag_id": "UA-9801603-6",
+              "event_category": "amp find Page",
+              "config": {
+                "UA-9801603-6": {
+                  "groups": "default"
+                }
+              }
+            },
+            "extraUrlParams": {
+              "cd75": "AMP",
+              "cd69": "AMP",
+              "cd81": "tokopediamarketplace",
+              "cd76": "${ampdocHostname}"
+            },
+            "triggers": {
+              "scrollPings" : {
+                "on": "scroll",
+                "scrollSpec" : {
+                  "verticalBoundaries" : [50]
+                },
+                "request" : "event",
+                "vars" : {
+                  "event_name" : "scroll page",
+                  "method" : "segway"
+                }
+              },
+              "breadcrumbClick" : {
+                "on" : "click",
+                "selector" : "#breadcrumb-link",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click breadcrumb",
+                  "method" : "https://m.tokopedia.com"
+                }
+              },
+              "productClick" : {
+                "on" : "click",
+                "selector" : ".trackProduct",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click product list",
+                  "method" : "${productId}"
+                }
+              },
+              "loadMoreClick" : {
+                "on" : "click",
+                "selector" : "#load-more",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view all",
+                  "method" : "https://m.tokopedia.com/search?q=segway&amp;st=product"
+                }
+              },
+              "bottomFilterClick" : {
+                "on" : "click",
+                "selector" : "#bottom-filter",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click filter",
+                  "method" : "segway"
+                }
+              },
+              "bottomSortClick" : {
+                "on" : "click",
+                "selector" : "#bottom-sort",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click sort",
+                  "method" : "segway"
+                }
+              },
+              "bottomDisplayClick" : {
+                "on" : "click",
+                "selector" : "#bottom-display",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view type",
+                  "method" : "segway"
+                }
+              }
+            }
+          }
+        
 </script>
 </amp-analytics>
     <h1>Welcome to the mobile web</h1>
