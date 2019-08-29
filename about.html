@@ -6,51 +6,99 @@
     <link rel="canonical" href="http://localhost/documentation/guides-and-tutorials/start/create/basic_markup">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<amp-analytics type="gtag" data-credentials="include">
-<script type="application/json">
-{
-  "vars" : {
-    "gtag_id": "UA-63387562-1",
-    "linker": {
-      "domains": ["https://charlest7.github.io/", "https://charlest7.github.io/about.html"]
-    },
-    "config" : {
-      "UA-63387562-1": { "groups": "default" }
-    }
-  },"extraUrlParams": {
-       "cd6": "2019-07-21T08:14:03.809281+00:00",
-       "cd7": "2019-07-21T08:14:03.809281+00:00",
-       "cd8": "Orami",
-       "cd9": "Intan",
-       "cd10": "Parenting",
-       "cd11":"xxxxxxxxxx"
-       
-  },"triggers": {
-                      "trackPageviewWithAmpdocUrl": {
-                        "on": "visible",
-                        "request": "pageview",
-                        "vars": {
-                          "title": "Kakek Nenek Tidak Dekat dengan Cucu, Apa Sebabnya?" ,
-                          "content_category": "Parenting",
-                          "content_subcategory": "Keluarga",
-                          "content_location": "Jakarta",
-                          "content_author": "Orami",
-                          "content_editor": "Intan",
-                          "content_lipsus":"",
-                          "content_type":"Standard",
-                          "content_PublishedDate": "2019-07-21T08:14:03.809281+00:00",
-                          "content_ModifiedDate": "2019-07-21T08:14:03.809281+00:00"
-                        }
-                      }
-                  }
-}
-</script>
-</amp-analytics>
+<amp-analytics type="gtag" data-credentials="include" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-layout" i-amphtml-layout="fixed" style="width: 1px; height: 1px;" aria-hidden="true" hidden="">
+        <script type="application/json">
+          {
+            "vars": {
+              "gtag_id": "UA-9801603-6",
+              "event_category": "amp find Page",
+              "config": {
+                "UA-9801603-6": {
+                  "groups": "default"
+                }
+              }
+            },
+            "extraUrlParams": {
+              "cd75": "AMP",
+              "cd69": "AMP",
+              "cd81": "tokopediamarketplace",
+              "cd76": "${ampdocHostname}"
+            },
+            "triggers": {
+              "scrollPings" : {
+                "on": "scroll",
+                "scrollSpec" : {
+                  "verticalBoundaries" : [50]
+                },
+                "request" : "event",
+                "vars" : {
+                  "event_name" : "scroll page",
+                  "method" : "segway"
+                }
+              },
+              "breadcrumbClick" : {
+                "on" : "click",
+                "selector" : "#breadcrumb-link",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click breadcrumb",
+                  "method" : "https://m.tokopedia.com"
+                }
+              },
+              "productClick" : {
+                "on" : "click",
+                "selector" : ".trackProduct",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click product list",
+                  "method" : "${productId}"
+                }
+              },
+              "loadMoreClick" : {
+                "on" : "click",
+                "selector" : "#load-more",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view all",
+                  "method" : "https://m.tokopedia.com/search?q=segway&amp;st=product"
+                }
+              },
+              "bottomFilterClick" : {
+                "on" : "click",
+                "selector" : "#bottom-filter",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click filter",
+                  "method" : "segway"
+                }
+              },
+              "bottomSortClick" : {
+                "on" : "click",
+                "selector" : "#bottom-sort",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click sort",
+                  "method" : "segway"
+                }
+              },
+              "bottomDisplayClick" : {
+                "on" : "click",
+                "selector" : "#bottom-display",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view type",
+                  "method" : "segway"
+                }
+              }
+            }
+          }
+        </script>
+      </amp-analytics>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
     <h1>Welcome to the mobile web</h1>
-    <button id="the-button">Button Login</button>
+    <button class="trackProduct">Button Login</button>
     <button id="product-click">Button Login</button>
   </body>
 </html>
