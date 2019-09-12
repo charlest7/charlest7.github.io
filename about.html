@@ -52,7 +52,8 @@
                 }
               },
               "productClick" : {
-                "on" : "click",
+                "on" : "visible",
+                "request": "elementview",
                 "selector" : ".trackProduct",
                 "request": "event",
                 "vars" : {
@@ -110,7 +111,7 @@
   </head>
   <body>
     <h1>Welcome to the mobile web</h1>
-    <button class="trackProduct">Button Login</button>
+    <button class="trackProduct" style="margin-top:200px;">Button Login</button>
     <button id="product-click">Button Login</button>
   </body>
 </html>
