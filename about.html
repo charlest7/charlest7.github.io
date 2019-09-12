@@ -17,13 +17,11 @@
       },
       "triggers": {
         "trackPageview": {
-          "selector": ".trackProduct",
           "on": "visible",
-          "request": "elementview",
-          "vars": {
-            "event_name": "login",
-            "method": "Google"
-          }
+          "request": "event",
+          "visibilitySpec": {
+            "selector": ".trackProduct"
+          },
         }
       }
     }
