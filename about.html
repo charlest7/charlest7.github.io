@@ -20,7 +20,13 @@
           "on": "visible",
           "request": "event",
           "visibilitySpec": {
-            "selector": "#product-click"
+            "selector": "#product-click",
+            "visiblePercentageMin": 20,
+            "totalTimeMin": 500,
+            "continuousTimeMin": 200
+          },
+          "vars": {
+            "eventId": "catview"
           }
         }
       }
