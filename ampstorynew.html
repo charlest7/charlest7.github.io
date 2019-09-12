@@ -23,11 +23,18 @@
         }
       },
       "triggers": {
-        "button": {
+        "trackPageview": {
           "selector": "#my-second-page",
           "on": "visible",
-          "request": "elementview",
+          "request": "event",
+          "visibilitySpec": {
+            
+            "visiblePercentageMin": 20,
+            "totalTimeMin": 500,
+            "continuousTimeMin": 200
+          },
           "vars": {
+            "eventId": "catview",
             "event_name": "login",
             "method": "Google"
           }
