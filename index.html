@@ -63,55 +63,42 @@ function promotionViews(){
 	// An example of measuring promotion views. This example assumes that
 // information about the promotions displayed is available when the page loads.
 dataLayer.push({
-	'event':'productImpression',
+	 'event': 'productClick',
   'ecommerce': {
-    'currencyCode': 'EUR',                       // Local currency is optional.
-    'impressions': [
-     {
-       'name': 'Triblend Android T-Shirt',       // Name or ID is required.
-       'id': '12345',
-       'price': '15.25',
-       'brand': 'Google',
-       'category': 'Apparel',
-       'variant': 'Gray',
-       'list': 'Search Results',
-	'dimension7':'test',
-       'position': 1
-     },
-     {
-       'name': 'Donut Friday Scented T-Shirt',
-       'id': '67890',
-       'price': '33.75',
-       'brand': 'Google',
-       'category': 'Apparel',
-       'variant': 'Black',
-	'dimension7':'test',
-       'list': 'Search Results',
-       'position': 2
-     }]
+    'promoView': {
+      'promotions': [                     // Array of promoFieldObjects.
+       {
+         'id': 'JUNE_PROMO13',            // ID or Name is required.
+         'name': 'June Sale',
+         'creative': 'banner1',
+         'position': 'slot1'
+       },
+       {
+         'id': 'FREE_SHIP13',
+         'name': 'Free Shipping Promo',
+         'creative': 'skyscraper1',
+         'position': 'slot2'
+       }]
+    }
   }
 });
+	
 }
 	
 	function productClick() {
-  dataLayer.push({
+dataLayer.push({
     'event': 'productClick',
     'ecommerce': {
-      'click': {
-        'actionField': {'list': 'Search Results'},      // Optional list property.
-        'products': [{
-          'name': 'Donut Friday Scented T-Shirt',
-       'id': '67890',
-       'price': '33.75',
-       'brand': 'Google',
-       'category': 'Apparel',
-       'variant': 'Black',
-	'dimension7':'test',
-       'list': 'Search Results',
-       'position': 2
+      'promoClick': {
+        'promotions': [
+         {
+           'id': "123",                         // Name or ID is required.
+           'name':"kdsfa",
+           'creative': "adsffd",
+           'position': "1"
          }]
-       }
-     }
+      }
+    }
   });
 }
 	promotionViews();
