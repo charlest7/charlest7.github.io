@@ -8,11 +8,34 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-    {
-       "vars": {
-           "gtag_id": "UA-131920835-1",
-           "config": {
-           "UA-131920835-1": { "groups": "default" }
+   <script type="application/json">
+    
+     {
+      "vars": {
+        "gtag_id": "UA-131920835-1",
+        "event_category":"Click Button",
+        "config": {
+         "UA-131920835-1": { "groups": "default" }
+        }
+      },"extraUrlParams":{
+        "cd5":"Event AMP",
+        "il1nm":"Search Results",
+            "il1pi1br":"Google",
+            "il1pi1ca":"Apparel",
+            "il1pi1cd7":"test",
+            "il1pi1id":"12345",
+            "il1pi1nm":"Triblend Android T-Shirt",
+            "il1pi1pr":"15.25",
+            "il1pi1ps":"1",
+            "il1pi1va":"Gray"
+      },"triggers": {
+          "button": {
+            "selector": "#the-button",
+            "on": "click",
+            "vars": {
+              "event_name": "login",
+              "method": "Google"
+            }
           }
       },"triggers": {
           "button": {
@@ -21,24 +44,23 @@
             "vars": {
              "event_category":"Enhance Ecommerce",
               "event_name": "Product Click",
-              "event_label": "Product Click Label",
-              "value": "1" 
+              "method": "Google"
             },"extraUrlParams":{
                 "pa":"click",
                 "pal":"Search Results",
-                "pr1br":"Kimono",
-                "pr1ca":"discovery/fashion-wanita - 33 - Jumpsuit",
-                "pr1id":"398902261",
-                "pr1nm":"Kimono Floral Jumpsuit JS6810",
-                "pr1pr":"122000",
+                "pr1br":"Google",
+                "pr1ca":"Apparel",
+                "pr1cd7":"test",
+                "pr1id":"67890",
+                "pr1nm":"Donut Friday Scented T-Shirt",
+                "pr1pr":"33.75",
                 "pr1ps":"2",
-                "pr1va":"Black",
-                "ni":0
+                "pr1va":"Black"
           }
         } 
       }
-
     }
+    </script>
    
     </script>
     </amp-analytics>
