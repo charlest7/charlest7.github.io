@@ -1,0 +1,49 @@
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://localhost/documentation/guides-and-tutorials/start/create/basic_markup">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <amp-analytics type="gtag" data-credentials="include">
+   <script type="application/json">
+    
+     {
+   "vars": {
+           "gtag_id": "UA-131920835-1",
+           "event_category": "AMP Enhanced Ecommerce",
+           "config": {
+           "UA-131920835-1": { "groups": "default" }
+          }
+      },"triggers": {
+          "promoImpression": {
+            "selector": "#promo-banner",
+            "on": "visible",
+            "request": "event",
+            "vars": {
+               "event_name": "Enhanced Ecommerce",
+               "event_action":"Promo Impression",
+               "event_label":"Promo HP",
+               "value": "1" 
+            },"extraUrlParams":{
+                "promo1id":"1117",
+                "promo1nm":"/ - p1 - promo",
+                "promo1cr":"AB_AB_VALUEPROPOSITION_BUY1GET1_NONLOGIN_SLOT2",
+                "promo1ps":"1"
+            }
+        } 
+    }
+}
+    </script>
+    </amp-analytics>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  <body>
+    <h1>Welcome to the mobile web</h1>
+    <button class="trackProduct" style="margin-top:5000px;">Button Login</button>
+    <button id="product-click">Button Login</button>
+    <amp-img id="promo-banner" src="https://ecs7.tokopedia.net/img/cache/1242/banner/2019/9/13/20723472/20723472_2d53b73d-be35-42c8-a9fa-f496040acda5.jpg" width="300" height="200" attribution="visualhunt" alt="a cat"
+  layout="responsive"></amp-img>
+  </body>
+</html>
