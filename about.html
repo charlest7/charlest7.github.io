@@ -7,45 +7,58 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
-   <script type="application/json">
-    {
+    <script type="application/json">
+    
+     {
        "vars": {
-           "gtag_id": "UA-131920835-1",
-           "config": {
-           "UA-131920835-1": { "groups": "default" }
+          "gtag_id": "UA-131920835-1",
+          "event_category":"Click Button",
+          "config": {
+          "UA-131920835-1": { "groups": "default" }
           }
+       },"extraUrlParams":{
+            "cd5":"Event AMP",
+            "il1nm":"Search Results",
+            "il1pi1br":"Google",
+            "il1pi1ca":"Apparel",
+            "il1pi1cd7":"test",
+            "il1pi1id":"12345",
+            "il1pi1nm":"Triblend Android T-Shirt",
+            "il1pi1pr":"15.25",
+            "il1pi1ps":"1",
+            "il1pi1va":"Gray"
       },"triggers": {
-          "button": {
-            "selector": "#promo-id",
-            "on": "click",
-            "vars": {
-             "event_category":"Enhance Ecommerce",
-              "event_name": "Product Click",
-              "method": "Google"
-            },"extraUrlParams":{
-                "pa":"click",
-                "pal":"Search Results",
-                "pr1br":"Kimono",
-                "pr1ca":"discovery/fashion-wanita - 33 - Jumpsuit",
-                "pr1id":"398902261",
-                "pr1nm":"Kimono Floral Jumpsuit JS6810",
-                "pr1pr":"122000",
-                "pr1ps":"2",
-                "pr1va":"Black"
-          }
-        } 
-      }
-      }
-
+            "button": {
+              "selector": "#prod-impression",
+              "on": "click",
+              "vars": {
+                  "event_name": "login",
+                  "method": "Google"
+              },"extraUrlParams":{
+                  "cd5":"Event AMP",
+                  "il1nm":"Search Results",
+                  "il1pi1br":"Google",
+                  "il1pi1ca":"Apparel",
+                  "il1pi1cd7":"test",
+                  "il1pi1id":"12345",
+                  "il1pi1nm":"Triblend Android T-Shirt",
+                  "il1pi1pr":"15.25",
+                  "il1pi1ps":"1",
+                  "il1pi1va":"Gray"
+              }
+           }
+        }
+      
+    }
     </script>
+ 
     </amp-analytics>
+
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
     <h1>Welcome to the mobile web</h1>
-    <button class="trackProduct" style="margin-top:5000px;">Button Login</button>
-    <button id="product-click">Button Login</button>
-    <amp-img id="promo-id" src="https://ecs7.tokopedia.net/img/cache/1242/banner/2019/9/13/20723472/20723472_2d53b73d-be35-42c8-a9fa-f496040acda5.jpg" width="300" height="200" attribution="visualhunt" alt="a cat"
-  layout="responsive"></amp-img>
+    <button id="the-button">Button Login</button>
+     <button id="prod-impression">Button Login</button>
   </body>
 </html>
