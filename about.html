@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
+   <script type="application/json">
     
       {
         "vars": {
             "gtag_id": "UA-131920835-1",
+            "event_category":"Click Button",
             "config": {
                 "UA-131920835-1": { "groups": "default" }
            }
@@ -27,37 +28,23 @@
             "il1pi1ps":"1",
             "il1pi1va":"Gray"
         },"triggers": {
-           "trackPromoImpression": {
+           "trackPageview": {
                "selector":"#cat-image-id",
                "on": "visible",
                "request": "event",
                "vars": {
-                  "eventId": "promoImpression",
-                  "event_category": "Enhanced Ecommerce"
+                  "eventId": "catview",
+                  "event_name": "login",
+                  "method": "Google"
                 },"extraUrlParams":{
                   "cd5":"Event AMP",
-                  "promo1id":"313",
-                  "promo1nm":"/ - dynamic icon",
-                  "promo1cr":"Handphone & Tablet",
-                  "promo1ps":"1"
+                  "promo1id":"1233",
+                  "promo1nm":"Google",
+                  "promo1cr":"Apparel",
+                  "promo1ps":"test"
   
-                }
-            },"trackPromoClick": {
-               "selector":"#cat-image-id",
-               "on": "click",
-               "request": "event",
-               "vars": {
-                  "eventId": "promoClick",
-                  "event_category": "Enhance Ecommerce"
-                },"extraUrlParams":{
-                  "cd5":"Event AMP",
-                  "promo1id":"313",
-                  "promo1nm":"/ - dynamic icon",
-                  "promo1cr":"Handphone & Tablet",
-                  "promo1ps":"1"
- 
-                }
-            }
+              }
+          }
         }
       }
     </script>
