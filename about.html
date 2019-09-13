@@ -6,31 +6,17 @@
     <link rel="canonical" href="http://localhost/documentation/guides-and-tutorials/start/create/basic_markup">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <amp-analytics type="gtag" data-credentials="include">
+    <amp-analytics type="googleanalytics" data-credentials="include">
     <script type="application/json">
     
      {
+       "selector": "#prod-impression",
+       "on": "click",
        "vars": {
-          "gtag_id": "UA-131920835-1",
-          "event_category":"Click Button",
-          "config": {
-          "UA-131920835-1": { "groups": "default" }
-          }
-       },"triggers": {
-            "button": {
-              "selector": "#prod-impression",
-              "on": "click",
-              "vars": {
-                  "event_name": "login",
-                  "method": "Google"
-              },"extraUrlParams":{
-                  "cd5":"Event AMP"
-  
-
-
-              }
-           }
-        }
+          "account": "UA-44450152-1"
+       },"extraUrlParams":{
+           "cd5":"Event AMP"
+       }
       
     }
     </script>
