@@ -36,7 +36,12 @@
                   "method" : "oppo a3s second"
                 }
               },
-              "breadcrumbClick" : {
+             "defaultPageview": {
+                  "on": "visible",
+                  "request": "elementview",
+                  "selector": "#product-click",
+    
+             },"breadcrumbClick" : {
                 "on" : "click",
                 "selector" : "#breadcrumb-link",
                 "request": "event",
@@ -50,9 +55,14 @@
                 "selector" : ".trackProduct",
                 "request": "event",
                 "vars" : {
+                  "event_category": "amp find Page",
                   "event_name" : "click product list",
-                  "event_label":"Click product list label"
-                }
+                  "event_label":"Click product list label",
+                  "value":"1"
+                },"extraUrlParams": {
+                  "ni": 0
+               }
+                
               },
               "loadMoreClick" : {
                 "on" : "click",
