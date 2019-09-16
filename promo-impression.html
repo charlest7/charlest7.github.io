@@ -15,24 +15,7 @@
             "config": {
                 "UA-131920835-1": { "groups": "default" }
              }
-         },"requests": {
-  "timer": {
-    "baseUrl": "https://example.com/analytics?",
-    "batchInterval": [1, 3],
-  }
-}
-"triggers": {
-  "timer": {
-    "on": "timer",
-    "request" : "timer",
-    "timerSpec": {
-      "interval": 1
-    },
-    "extraUrlParams": {
-      "rc": "${requestCount}"
-    }
-  }
-}
+         }
    }
 
 
