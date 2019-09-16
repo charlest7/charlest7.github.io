@@ -10,13 +10,28 @@
    <script type="application/json">
     
    {
-        "vars": {
+     "vars": {
             "gtag_id": "UA-131920835-1",
             "config": {
-                "UA-131920835-1": { "groups": "default" }
-             }
-         }
+              "UA-131920835-1": { "groups": "default" }
+            }
+          },"triggers": {
+           "promoClick": {
+               "selector": "#promo-banner",
+               "on": "click",
+               "request": "event",
+               "vars": {
+                  "event_name": "Enhanced Ecommerce",
+                  "event_action":"Promo Impression",
+                  "event_label":"Promo HP",
+                  "value": "1" 
+               },"extraUrlParams":{
+                  "cd5":"Test AMP Page"
+               }
+           } 
+       }
    }
+
 
 
 
