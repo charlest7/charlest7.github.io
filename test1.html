@@ -36,27 +36,6 @@
                   "method" : "oppo a3s second"
                 }
               },
-              "defaultProductmpression": {
-                  "on": "visible",
-                  "request": "elementview",
-                  "selector": "#product-click",
-                  "vars" : {
-                    "event_category":"Enhanced Ecommerce",
-                    "event_name": "Product Impression",
-                    "event_label": "Product Impression Label",
-                    "value": "1",
-                  },"extraUrlParams":{
-                    "il1nm":"Search Results",
-                    "il1pi1br":"Kimono",
-                    "il1pi1ca":"discovery/fashion-wanita - 33 - Jumpsuit",
-                    "il1pi1id":"398902261",
-                    "il1pi1nm":"Kimono Floral Jumpsuit JS6810",
-                    "il1pi1pr":"122000",
-                    "il1pi1ps":"1",
-                    "il1pi1va":"Black",
-                    "ni":1
-                  }
-              },
               "breadcrumbClick" : {
                 "on" : "click",
                 "selector" : "#breadcrumb-link",
@@ -71,14 +50,9 @@
                 "selector" : ".trackProduct",
                 "request": "event",
                 "vars" : {
-                  "event_category": "amp find Page",
                   "event_name" : "click product list",
-                  "event_label":"Click product list label",
-                  "value":"1"
-                },"extraUrlParams": {
-                  "ni": 0
-               }
-                
+                  "event_label":"Click product list label"
+                }
               },
               "loadMoreClick" : {
                 "on" : "click",
@@ -126,6 +100,6 @@
   <body>
     <h1>Welcome to the mobile web</h1>
     <button class="trackProduct">Button Login</button>
-    <button id="product-clicks">Button Login</button>
+    <button id="product-click">Button Login</button>
   </body>
 </html>
