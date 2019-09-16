@@ -15,38 +15,33 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
-    {
-      "vars": {
-        "gtag_id": "UA-63387562-1",
-        "config": {
-           "UA-63387562-1": { "groups": "default" }
-        }
-      },"extraUrlParams":{
-                  "promo1id":"1117",
-                  "promo1nm":"/ - p1 - promo",
-                  "promo1cr":"AB_AB_VALUEPROPOSITION_BUY1GET1_NONLOGIN_SLOT2",
-                  "promo1ps":"1"
+   {
+     "vars": {
+           "gtag_id": "UA-131920835-1",
+           "event_category": "AMP Enhanced Ecommerce",
+           "config": {
+           "UA-131920835-1": { "groups": "default" }
+           }
       },"triggers": {
-           "trackPageview": {
-              "selector":"#my-second-page",
-              "on": "click",
-              "request": "event",
-              "vars": {
-                   "event_category":"Enhance Ecommerce",
-                    "event_name": "Product Click",
-                    "method": "Google"
-              },
-
-              "extraUrlParams":{
-                  "promoa":"click",
+           "promoClick": {
+               "selector": "#my-second-page",
+               "on": "click",
+               "request": "event",
+               "vars": {
+                  "event_name": "Enhanced Ecommerce",
+                  "event_action":"Promo Impression",
+                  "event_label":"Promo HP",
+                  "value": "1" 
+               },"extraUrlParams":{
+                   "promoa":"click",
                   "promo1id":"1117",
                   "promo1nm":"/ - p1 - promo",
                   "promo1cr":"AB_AB_VALUEPROPOSITION_BUY1GET1_NONLOGIN_SLOT2",
                   "promo1ps":"1"
-              }
-          }
-        }
-    }
+               }
+           } 
+       }
+   }
     </script>
     </amp-analytics>
     <amp-story standalone>
