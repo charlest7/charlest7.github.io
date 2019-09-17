@@ -35,19 +35,18 @@
             "ni":1
         },
         "triggers": {
-          "scrollPings" : {
-            "on": "scroll",
-            "scrollSpec" : {
-              "verticalBoundaries" : [20, 50]
-              },
-            "request" : "event",
-            "vars" : {
-              "event_name" : "scroll page",
-              "event_action" : "scroll page",
-              "Event_label" : "setelan wanita", 
+          "button": {
+            "selector": "#product-click",
+            "on": "click",
+            "Request": "event",
+            "vars": {
+              "event_name" : "click product list",
+              "event_action" : "click product list",
+              “event _label” : "segway", 
               "value" : "1"
             }
           }
+
        }
     }   
 
