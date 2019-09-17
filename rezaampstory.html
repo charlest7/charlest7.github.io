@@ -10,15 +10,14 @@
     <amp-analytics type="gtag" data-credentials="include">
    <script type="application/json">
     
-     {
+        {
      "vars": {
            "gtag_id": "UA-131920835-1",
            "event_category": "AMP Enhanced Ecommerce",
            "config": {
            "UA-131920835-1": { "groups": "default" }
            }
-      },"triggers": 
-           {
+      },"triggers": {
            "promoClick": {
                "selector": "#promo-banner",
                "on": "click",
@@ -27,8 +26,13 @@
                   "event_name": "Enhanced Ecommerce",
                   "event_action":"Promo Impression",
                   "event_label":"Promo HP",
-                  "value": "1"
-                  }
+                  "value": "1" 
+               },"extraUrlParams":{
+                   "promoa":"click",
+                  "promo1id":"1117",
+                  "promo1nm":"/ - p1 - promo",
+                  "promo1cr":"AB_AB_VALUEPROPOSITION_BUY1GET1_NONLOGIN_SLOT2",
+                  "promo1ps":"1"
                }
            } 
        }
