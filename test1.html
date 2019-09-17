@@ -8,47 +8,91 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
       <script type="application/json">
-          {
-        "vars": {
-          "gtag_id": "UA-63387562-1",
-          "event_category": "amp category detail page",
-          "config": {
-            "UA-63387562-1": {
-              "groups": "default"
-            }
-          }
-        },
-        "extraUrlParams": {
-            "pa":"click",
-            "pal":"Search Results",
-            "pr1br":"Kimono",
-            "pr1ca":"discovery/fashion-wanita - 33 - Jumpsuit",
-            "pr1id":"398902261",
-            "pr1nm":"Kimono Floral Jumpsuit JS6810",
-            "Pr1pr":"122000",
-            "pr1ps":"2",
-            "pr1va":"Black",
-            "cd75": "AMP",
-            "cd69": "AMP",
-            "cd81": "tokopediamarketplace",
-            "cd76": "${ampdocHostname}",
-            "ni":1
-        },
-        "triggers": {
-          "button": {
-            "selector": "#product-click",
-            "on": "click",
-            "request": "event",
+         {
             "vars": {
-              "event_name" : "click product list",
-              "event_action" : "click product list",
-              "event_label" : "segway", 
-              "value" : "1"
+              "gtag_id": "UA-63387562-1",
+              "event_category": "amp find Page",
+              "config": {
+                "UA-63387562-1": {
+                  "groups": "default"
+                }
+              }
+            },
+            "extraUrlParams": {
+              "cd75": "AMP",
+              "cd69": "AMP",
+              "cd81": "tokopediamarketplace",
+              "cd76": "${ampdocHostname}"
+            },
+            "triggers": {
+              "scrollPings" : {
+                "on": "scroll",
+                "scrollSpec" : {
+                  "verticalBoundaries" : [50]
+                },
+                "request" : "event",
+                "vars" : {
+                  "event_name" : "scroll page",
+                  "method" : "oppo a3s second"
+                }
+              },
+              "breadcrumbClick" : {
+                "on" : "click",
+                "selector" : "#breadcrumb-link",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click breadcrumb",
+                  "method" : "https://m.tokopedia.com"
+                }
+              },
+              "productClick" : {
+                "on" : "click",
+                "selector" : ".trackProduct",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click product list",
+                  "event_label":"Click product list label"
+                }
+              },
+              "loadMoreClick" : {
+                "on" : "click",
+                "selector" : "#load-more",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view all",
+                  "method" : "https://m.tokopedia.com/search?q=oppo%20a3s%20second&amp;st=product"
+                }
+              },
+              "bottomFilterClick" : {
+                "on" : "click",
+                "selector" : "#bottom-filter",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click filter",
+                  "method" : "oppo a3s second"
+                }
+              },
+              "bottomSortClick" : {
+                "on" : "click",
+                "selector" : "#bottom-sort",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click sort",
+                  "method" : "oppo a3s second"
+                }
+              },
+              "bottomDisplayClick" : {
+                "on" : "click",
+                "selector" : "#bottom-display",
+                "request": "event",
+                "vars" : {
+                  "event_name" : "click view type",
+                  "method" : "oppo a3s second"
+                }
+              }
             }
           }
-
-       }
-    }   
+        
 
           
        
