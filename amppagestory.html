@@ -25,7 +25,31 @@
       "cd69": "AMP", 
       "cd81": "tokopediamarketplace", 
       "cd76": "${ampdocHostname}"
-   }
+   },"triggers": {
+         "productImpression": {
+		"selector": "#product1",
+		"on": "visible",
+		"request": "event",
+		"vars": {
+			"eventName": "Product Impression",
+		      "eventCategory":"Enhanced Ecommerce",
+			"eventAction":"Product Impression",
+			"eventLabel":"Segway",
+			"eventValue": "1"				   
+		},"extraUrlParams":{
+			"il1nm":"Search Results",
+			"il1pi1br":"Swag Way",
+			"il1pi1ca":"Mainan",
+			"il1pi1id":"12234",
+			"il1pi1nm":"Segway A8",
+			"il1pi1pr":"2900000",
+			"il1pi1ps":"2",
+			"il1pi1va":"Black",
+			"ni":"0"
+		}	
+	    }
+	  }
+
 }
 </script>
 </amp-analytics>  
