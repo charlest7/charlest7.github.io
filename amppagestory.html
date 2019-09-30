@@ -24,15 +24,40 @@
       "trackPageview": {
         "on": "visible",
         "request": "pageview"
-      },"trackClickOnHeader" : {
-	  "on": "click",
-	  "selector":"#first-page",
+      },"promoImpression" : {
+	  "on": "visible",
+	  "selector":".i-amphtml-layout",
 	  "request": "event",
 	  "vars": {
-		"eventCategory": "ui-components",
-		"eventAction": "header-click"
-   	  }
-     }
+		"eventName": "Promo Impression",
+		"eventCategory":"Enhanced Ecommerce",
+		"eventAction":"Promo Impression",
+		"eventLabel":"Segway",
+		"eventValue": "1"
+   	  },"extraUrlParams":{
+		"promo1id":"295",
+		"promo1nm":"Semua Kategori",
+		"promo1cr":"/ - dynamic icon",
+		"promo1ps":"1",
+         }	
+      },"promoClick" : {
+	  "on": "click",
+	  "selector":".i-amphtml-layout",
+	  "request": "event",
+	  "vars": {
+		"eventName": "Product Impression",
+		"eventCategory":"Enhanced Ecommerce",
+		"eventAction":"Product Impression",
+		"eventLabel":"Segway",
+		"eventValue": "1"
+   	  },"extraUrlParams":{
+	        "pa":"click",
+		"promo1id":"295",
+		"promo1nm":"Semua Kategori",
+		"promo1cr":"/ - dynamic icon",
+		"promo1ps":"1",
+         }
+      }
     }
   }
   </script>
