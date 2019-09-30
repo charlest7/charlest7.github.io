@@ -21,15 +21,10 @@
       "account": "UA-63387562-1"
     },
     "triggers": {
-      "on": "click",
-              
-               "vars": {
-                    "eventName": "Promo Click",
-		    "eventCategory":"AMP Find Page",
-	            "eventAction":"click product list",
-	            "eventLabel":"segway",
-	            "eventValue": "1"
-	      }
+      "trackPageview": {
+        "on": "click",
+        "request": "pageview"
+      }
     }
   }
   </script>
