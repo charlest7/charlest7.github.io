@@ -26,7 +26,7 @@
         "request": "pageview"
       },"trackClickOnHeader" : {
 	  "on": "click",
-	  "selector":".i-amphtml-element",
+	  "selector":".i-amphtml-element#first-img",
 	  "request": "event",
 	  "vars": {
 		"eventCategory": "ui-components",
@@ -39,14 +39,14 @@
 </amp-analytics>
   
     <amp-story standalone title="Hello Story" publisher="The AMP Team" publisher-logo-src="https://example.com/logo/1x1.png" poster-portrait-src="https://example.com/my-story/poster/3x4.jpg">
-      <amp-story-page id="my-first-page">
-        <amp-story-grid-layer template="fill">
-          <amp-img src="https://example.ampproject.org/helloworld/bg1.jpg"
+      <amp-story-page id="first-img">
+        <amp-story-grid-layer template="fill" id="first-img">
+          <amp-img id="first-img" src="https://example.ampproject.org/helloworld/bg1.jpg"
               width="900" height="1600">
           </amp-img>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1>Hello, amp-story!</h1>
+        <amp-story-grid-layer id="first-img" template="vertical" >
+          <h1 id="first-img">Hello, amp-story!</h1>
         </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="my-second-page">
