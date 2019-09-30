@@ -26,12 +26,23 @@
       "cd81": "tokopediamarketplace", 
       "cd76": "${ampdocHostname}"
    },"triggers": {
-       "productClick": {
+         "promoImpression": {
+               "selector": "#my-second-page",
+               "on": "visible",
+	       "request": "event",
+               "vars": {
+                    "eventName": "Promo Impression",
+		    "eventCategory":"AMP Find Page",
+	            "eventAction":"impression promo list",
+	            "eventLabel":"segway",
+	            "eventValue": "1"
+	      }
+          },"promoClick": {
                "selector": "#my-second-page",
                "on": "click",
 	       "request": "event",
                "vars": {
-                    "eventName": "Product Click",
+                    "eventName": "Promo Click",
 		    "eventCategory":"AMP Find Page",
 	            "eventAction":"click product list",
 	            "eventLabel":"segway",
