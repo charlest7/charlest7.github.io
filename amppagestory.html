@@ -31,8 +31,8 @@
 		  "request": "pageview"
          },
          "promoImpression": {
+	       "on": "visible",
                "selector": "#my-second-page",
-               "on": "visible",
 	       "request": "event",
                "vars": {
                     "eventName": "Promo Impression",
@@ -42,8 +42,9 @@
 	            "eventValue": "1"
 	      }
           },"promoClick": {
+	       "on": "click",
                "selector": "#my-second-page",
-               "on": "click",
+              
                "vars": {
                     "eventName": "Promo Click",
 		    "eventCategory":"AMP Find Page",
