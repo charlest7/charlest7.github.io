@@ -26,7 +26,7 @@
         "request": "pageview"
       },"trackClickOnHeader" : {
 	  "on": "click",
-	  "selector":".i-amphtml-fill-content",
+	  "selector":"#second-img",
 	  "request": "event",
 	  "vars": {
 		"eventCategory": "ui-components",
@@ -51,7 +51,7 @@
       </amp-story-page>
       <amp-story-page id="my-second-page">
         <amp-story-grid-layer template="fill">
-          <amp-img src="https://example.ampproject.org/helloworld/bg2.gif"
+          <amp-img id="second-img" src="https://example.ampproject.org/helloworld/bg2.gif"
               width="900" height="1600">
           </amp-img>
         </amp-story-grid-layer>
