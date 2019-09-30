@@ -42,7 +42,7 @@
          }	
       },"promoClick" : {
 	  "on": "click",
-	  "selector":"#first-page",
+	  "selector":".first-page",
 	  "request": "event",
 	  "vars": {
 		"eventName": "Product Impression",
@@ -64,14 +64,14 @@
 </amp-analytics>
   
     <amp-story standalone title="Hello Story" publisher="The AMP Team" publisher-logo-src="https://example.com/logo/1x1.png" poster-portrait-src="https://example.com/my-story/poster/3x4.jpg">
-      <amp-story-page id="first-page">
-        <amp-story-grid-layer template="fill" id="first-page">
-          <amp-img id="first-img" src="https://example.ampproject.org/helloworld/bg1.jpg"
+      <amp-story-page class="first-page">
+        <amp-story-grid-layer template="fill" class="first-page">
+          <amp-img class="first-page" src="https://example.ampproject.org/helloworld/bg1.jpg"
               width="900" height="1600">
           </amp-img>
         </amp-story-grid-layer>
-        <amp-story-grid-layer id="first-img" template="vertical" >
-          <h1 id="first-img">Hello, amp-story!</h1>
+        <amp-story-grid-layer class="first-page" template="vertical" >
+          <h1 class="first-page">Hello, amp-story!</h1>
         </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="my-second-page">
