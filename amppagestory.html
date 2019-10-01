@@ -21,9 +21,12 @@
       "account": "UA-63387562-1"
     },
     "triggers": {
-     "trackPageview": {
+      "trackPageview": {
         "on": "visible",
-        "selector":".i-amphtml-layout",
+        "request": "pageview"
+      },"promoImpression" : {
+	  "on": "visible",
+	  "selector":".i-amphtml-layout",
 	  "request": "event",
 	  "vars": {
 		"eventName": "Promo Impression",
@@ -32,7 +35,6 @@
 		"eventLabel":"Segway",
 		"eventValue": "1"
    	  },"extraUrlParams":{
-	   "cd5":"2121",
 		"promo1id":"295",
 		"promo1nm":"/ - dynamic icon",
 		"promo1cr":"Semua Kategori",
@@ -43,13 +45,12 @@
 	  "selector":".i-amphtml-layout",
 	  "request": "event",
 	  "vars": {
-		"eventName": "Promo Click",
+		"eventName": "Product Impression",
 		"eventCategory":"Enhanced Ecommerce",
-		"eventAction":"Promo Click",
+		"eventAction":"Product Impression",
 		"eventLabel":"Segway",
 		"eventValue": "1"
    	  },"extraUrlParams":{
-	        "cd5":"2121",
 	        "promoa":"click",
 		"promo1id":"295",
 		"promo1nm":"/ - dynamic icon",
